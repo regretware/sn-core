@@ -17,7 +17,7 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
     line-height: 200%;
     color: black;
     box-sizing: border-box;
@@ -25,6 +25,32 @@ p {
     margin-right: auto;
     max-width: 800px;
     font-size: 1.5em;
+}
+
+.headline-block h1 {
+    padding-top: 4vh;
+    display: flex;
+}
+
+.headline-block .caption {
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: small;
+    text-shadow: 0px 1px 24px rgb(0, 0, 0, 1);
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.headline-block img {
+    width: 100%;
+    border-radius: 0.5em;
 }
 
 .text {
@@ -169,6 +195,20 @@ a:hover {
     .headline-block {
         padding-top: 10vh;
         font-size: 1em;
+    }
+
+    .headline-block img {
+        width: 100%;
+        border-radius: 0.5em;;
+    }
+
+    .headline-block .caption {
+        position: absolute;
+        width: 100%;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.8em;
     }
 
     .text {
