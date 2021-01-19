@@ -12,11 +12,26 @@ p {
     margin-block-start: 0px;
 }
 
+.headline-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10vh;
+    line-height: 200%;
+    color: black;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    font-size: 1.5em;
+}
+
 .text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
     line-height: 150%;
     color: black;
     box-sizing: border-box;
@@ -35,7 +50,6 @@ p {
     padding-bottom: 6vh;
     margin: auto;
     flex-wrap: wrap;
-    
 }
 
 .middle-links {
@@ -51,7 +65,6 @@ p {
     padding-top: 1vh;
     padding-bottom: 1vh;
     display: inline;
-    
 }
 
 .logo-link:hover {
@@ -131,7 +144,8 @@ a:hover {
         background-color: black;
         
     }
-    .text {
+
+    .text, .headline-block h1 {
         color: white;
     }
 
@@ -150,6 +164,11 @@ a:hover {
 @media screen and (max-width: 840px) {
     .links {
         flex-wrap: wrap;
+    }
+
+    .headline-block {
+        padding-top: 10vh;
+        font-size: 1em;
     }
 
     .text {
@@ -176,7 +195,7 @@ a:hover {
 
 @media screen and (max-width: 840px) and (prefers-color-scheme: dark) {
 
-    .text {
+    .text, .headline-block h1 {
         color: white;
     }
 
