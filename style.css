@@ -28,8 +28,18 @@ p {
 }
 
 .headline-block h1 {
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
     display: flex;
+    margin-block-end: 0px;
+}
+
+.headline-block p {
+    margin-block-end: 0px;
+}
+
+.headline-block h2 {
+    font-size: 1em;
+    color: #afafaf;
 }
 
 .headline-block .caption {
@@ -50,7 +60,7 @@ p {
 
 .headline-block img {
     width: 100%;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
 }
 
 .text {
@@ -85,6 +95,7 @@ p {
     line-height: 200%;
     margin: auto;
     flex-wrap: wrap;
+    padding-bottom: 4vh;
 }
 
 .links-inline {
@@ -192,14 +203,16 @@ a:hover {
         flex-wrap: wrap;
     }
 
+    .middle-links {
+        padding-top: 6vh;
+    }
+
     .headline-block {
-        padding-top: 10vh;
         font-size: 1em;
     }
 
     .headline-block img {
         width: 100%;
-        border-radius: 0.5em;;
     }
 
     .headline-block .caption {
