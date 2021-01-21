@@ -100,7 +100,7 @@ p {
     line-height: 200%;
     margin: auto;
     flex-wrap: wrap;
-    padding-bottom: 4vh;
+    padding-bottom: 1.5rem;
 }
 
 .links-inline {
@@ -120,6 +120,7 @@ svg {
     display: block;
     margin: auto;
     width: 4em;
+    height: 12em;
     /* padding-top: 10vh; */
 }
 
@@ -203,6 +204,7 @@ a:hover {
 }
 
 @media screen and (max-width: 840px) {
+
     .links {
         flex-wrap: wrap;
     }
@@ -213,6 +215,7 @@ a:hover {
 
     .headline-block {
         font-size: 1em;
+        hyphens: auto
     }
 
     .headline-block img {
@@ -228,9 +231,12 @@ a:hover {
         font-size: 0.7em;
     }
 
-    .text {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .headline-block, .text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        hyphens: auto;
+        -webkit-hyphens:auto;
+        -moz-hyphens: auto;
     }
 
     svg {
