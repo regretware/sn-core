@@ -18,28 +18,46 @@ p {
     justify-content: center;
     text-align: center;
     /* padding-top: 10vh; */
-    line-height: 200%;
     color: black;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    font-size: 1.5em;
+
 }
 
-.headline-block h1 {
+h1.headline {
     /* padding-top: 4vh; */
     display: flex;
     margin-block-end: 0px;
+    font-size: 2em;
+    line-height: 120%;
 }
 
 .headline-block p {
     margin-block-end: 0px;
 }
 
-.headline-block h2 {
-    font-size: 1em;
+.author {
     color: #afafaf;
+    /* display: flex; */
+
+}
+
+.author a {
+
+}
+
+.byline {
+    /* font-size: 1em; */
+    color: #afafaf;
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    line-height: initial;
 }
 
 .headline-block .caption {
@@ -89,9 +107,9 @@ p {
     flex-wrap: wrap;
 }
 
-/* .links a {
+.links a, .middle-links a {
     margin-right: 10px;
-} */
+}
 
 .middle-links {
     display: flex;
@@ -124,7 +142,7 @@ svg {
     /* padding-top: 10vh; */
 }
 
-a {
+.middle-links a, .links a {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -139,7 +157,7 @@ a {
     padding: 0px 8px;
 }
 
-a:hover {
+.middle-links a:hover, .links a:hover {
     background-color: black;
     transition: background 170ms ease-in-out;
     color: white;
@@ -187,15 +205,15 @@ a:hover {
         
     }
 
-    .text, .headline-block h1 {
+    .text, .headline-block h1.headline {
         color: white;
     }
 
-    a {
+    a, .middle-links a, .links a {
         color: white;
     }
 
-    a:hover {
+    .middle-links a:hover, .links a:hover {
         background-color: white;
         transition: background 170ms ease-in-out;
         color: black;
@@ -213,10 +231,11 @@ a:hover {
         padding-top: 6vh;
     }
 
-    .headline-block {
+    .headline{
         font-size: 1em;
         hyphens: auto;
         line-height: 2.5em;
+        margin-top: 1em;
     }
 
     .headline-block img {
@@ -240,18 +259,27 @@ a:hover {
         -moz-hyphens: auto;
     }
 
+    .byline {
+        line-height: 2em;
+        flex-direction: column;
+    }
+
+    .dot {
+        display: none;
+    }
+
     svg {
         height: 4em;
         padding-top: 6vh;
     }
 
-    a, a:hover {
+    .middle-links a, .links a, .middle-links a:hover, .links a:hover {
         color: black;
         background-color: white;
         animation: none;
     }
 
-    a:hover {
+    .middle-links a:hover, .links a:hover {
         color: white;
         background-color: black;
     }
@@ -267,12 +295,12 @@ a:hover {
         background-color: black;
     }
 
-    a {
+    .middle-links a, .links a {
         color: white;
         background-color: black;
     }
 
-    a:hover {
+    .middle-links a:hover, .links a:hover {
         background-color: white;
         transition: background 170ms ease-in-out;
         color: black;
