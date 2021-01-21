@@ -215,7 +215,8 @@ a:hover {
 
     .headline-block {
         font-size: 1em;
-        hyphens: auto
+        hyphens: auto;
+        line-height: 2.5em;
     }
 
     .headline-block img {
