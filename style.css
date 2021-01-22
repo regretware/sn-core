@@ -162,16 +162,13 @@ time {
 .text a {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
-    /* padding-right: 0.2em;
-    padding-left: 0.2em; */
     display: inline;
     color: black;
-    background: #white;
+    /* background: white; */
     border-bottom: 1px dotted black;
     border-radius: 0.0em;
     text-decoration: none;
     /* transition: background 200ms ease-out; */
-
 }
 
 .text a:hover {
@@ -296,6 +293,18 @@ time {
         color: white;
         transition: color 120ms linear;
     }
+
+    .text a {
+        color: white;
+        border-bottom: white;
+        border-bottom: 1px dotted white;
+    }
+
+    .text a:hover {
+        color: white;
+        border-bottom: white;
+        border-bottom: 1px solid white;
+    }
 }
 
 @media screen and (max-width: 840px) {
@@ -322,10 +331,10 @@ time {
     .headline-block .caption {
         position: absolute;
         width: 90%;
-        top: 92%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 0.7em;
+        font-size: 60%;
     }
 
     .headline-block, .text {
