@@ -90,7 +90,7 @@ time {
     line-height: 2em;
 }
 
-.headline-block .caption {
+.image-container .caption {
     position: absolute;
     width: 100%;
     top: 92%;
@@ -101,13 +101,30 @@ time {
     line-height: 150%;
 }
 
+figure {
+    font-weight: normal;
+}
+
+#greber {
+    display: none;
+
+}
+
 .image-container {
     position: relative;
     text-align: center;
     color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.headline-block img {
+.inline-image {
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+}
+
+.image-container img {
     width: 100%;
     border-radius: 0.3em;
 }
@@ -163,17 +180,18 @@ time {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
     display: inline;
-    color: black;
-    /* background: white; */
-    border-bottom: 1px dotted black;
-    border-radius: 0.0em;
+    color: #0178FF;
+    background: #0178FF10;
+    border-radius: 0.2em;
     text-decoration: none;
-    /* transition: background 200ms ease-out; */
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    transition: background 200ms ease-out;
 }
 
 .text a:hover {
-    border-bottom: 1px solid black;
-    /* transition: background 120ms ease-in; */
+    background: none;
+    transition: background 120ms ease-in;
 }
 
 .logo-link:hover {
@@ -295,15 +313,17 @@ time {
     }
 
     .text a {
-        color: white;
-        border-bottom: white;
-        border-bottom: 1px dotted white;
+        background: #0178FF30
+
+        /* color: white;
+        border: white;
+        border: 1px dotted white; */
     }
 
     .text a:hover {
-        color: white;
-        border-bottom: white;
-        border-bottom: 1px solid white;
+        /* color: white;
+        border: white;
+        border: 1px solid white; */
     }
 }
 
@@ -328,13 +348,12 @@ time {
         width: 100%;
     }
 
-    .headline-block .caption {
+    .image-container .caption {
         position: absolute;
         width: 90%;
-        top: 90%;
+        top: 85%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 60%;
+        font-size: 0.5em;
     }
 
     .headline-block, .text {
