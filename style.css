@@ -159,10 +159,24 @@ time {
     padding-bottom: 1.5rem;
 }
 
-.links-inline {
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+.text a {
+    padding-top: 0.0em;
+    padding-bottom: 0.1em;
+    /* padding-right: 0.2em;
+    padding-left: 0.2em; */
     display: inline;
+    color: black;
+    background: #white;
+    border-bottom: 1px dotted black;
+    border-radius: 0.0em;
+    text-decoration: none;
+    /* transition: background 200ms ease-out; */
+
+}
+
+.text a:hover {
+    border-bottom: 1px solid black;
+    /* transition: background 120ms ease-in; */
 }
 
 .logo-link:hover {
@@ -172,7 +186,7 @@ time {
     animation: pulse-logo 1s infinite;
 }
 
-svg {
+.logo svg {
     display: block;
     margin: auto;
     width: 4em;
@@ -201,6 +215,17 @@ svg {
     color: white;
     animation: pulse 1s infinite;
 
+}
+
+.likely-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    max-width: 800px;
 }
 
 ::selection {
@@ -342,7 +367,7 @@ svg {
         border-radius: 0.3em;
     }
 
-    svg {
+    .logo svg {
         height: 4em;
         padding-top: 6vh;
     }
@@ -356,6 +381,10 @@ svg {
     .middle-links a:hover, .links a:hover {
         color: white;
         background-color: black;
+    }
+
+    .likely-container {
+        display: none;
     }
 }
 
