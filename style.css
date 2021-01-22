@@ -8,7 +8,7 @@ body {
 
 }
 
-p {
+p, blockquote {
     margin-block-start: 0px;
 }
 
@@ -124,6 +124,14 @@ time {
     margin-right: auto;
     max-width: 800px;
     font-size: 1.5em;
+}
+
+.text blockquote {
+    margin-left: 2em;
+    padding: 1em;
+    border: 1px solid #afafaf80;
+    border-radius: 0.3em;
+    /* background: #f8f8f8; */
 }
 
 .links {
@@ -324,6 +332,14 @@ svg {
         border-bottom-left-radius: 0.3em;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0.3em;
+    }
+
+    .text blockquote {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1em;
+        border: 1px solid #afafaf80;
+        border-radius: 0.3em;
     }
 
     svg {
