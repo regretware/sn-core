@@ -93,7 +93,7 @@ time {
 .image-container .caption {
     position: absolute;
     width: 100%;
-    top: 92%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: small;
@@ -106,7 +106,10 @@ figure {
 }
 
 #greber {
-    display: none;
+    /* display: none; */
+    text-shadow: none;
+    color: grey;
+    bottom: 3%;
 
 }
 
@@ -124,9 +127,10 @@ figure {
     margin-block-end: 2rem;
 }
 
-.image-container img {
+.image-container img, .inline-image img {
     width: 100%;
     border-radius: 0.3em;
+    object-fit: contain;
 }
 
 .text {
@@ -146,9 +150,11 @@ figure {
 .text blockquote {
     margin-left: 2em;
     padding: 1em;
-    border: 1px solid #afafaf80;
+    /* border: 1px solid #afafaf80; */
     border-radius: 0.3em;
     /* background: #f8f8f8; */
+
+    box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.1) 0px 1px 5px;
 }
 
 .links {
@@ -348,12 +354,12 @@ figure {
         width: 100%;
     }
 
-    .image-container .caption {
+    .image-container .caption, .image-container .inline-image .caption {
         position: absolute;
         width: 90%;
-        top: 85%;
+        bottom: 5%;
         left: 50%;
-        font-size: 0.5em;
+        font-size: 0.6rem;
     }
 
     .headline-block, .text {
@@ -393,6 +399,7 @@ figure {
         padding: 1em;
         border: 1px solid #afafaf80;
         border-radius: 0.3em;
+        
     }
 
     .logo svg {
