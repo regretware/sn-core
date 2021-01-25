@@ -35,8 +35,8 @@ h1.headline {
     /* padding-top: 4vh; */
     display: flex;
     margin-block-end: 0px;
-    font-size: 2em;
-    line-height: 120%;
+    font-size: 3em;
+    line-height: 110%;
     font-weight: 800;
 }
 
@@ -58,12 +58,6 @@ h1.headline {
     font-style: normal;
     transition: color 240ms ease-out;
 }
-
-/* .byline:hover{
-    background: #eeeeee70;
-    border: 1px solid black;
-    transition: background 120ms linear;
-} */
 
 .byline a:hover{
     /* background: #eeeeee70; */
