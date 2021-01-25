@@ -1,5 +1,6 @@
 :root {
     --shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.1) 0px 1px 5px;
+    --shadow-lifted: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.2) 0px 1px 5px;
     --shadow-light: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px, rgba(255, 255, 255, 0.1) 0px 0px 5px;
 }
 
@@ -157,6 +158,14 @@ figure {
     /* background: #f8f8f8; */
 
     box-shadow: var(--shadow);
+
+    transition: 0.2s ease-in;
+}
+
+.text blockquote:hover {
+    transform: translate3d(0px, -1px, 0px);
+    transition: 0.2s ease-out;
+    box-shadow: var(--shadow-lifted);
 }
 
 .links {
@@ -320,7 +329,7 @@ figure {
         transition: color 120ms linear;
     }
 
-    .text blockquote {
+    .text blockquote, .text blockquote:hover {
         box-shadow: var(--shadow-light);
     }
 
