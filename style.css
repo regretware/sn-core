@@ -44,6 +44,37 @@ h1.headline {
 .author-pic {
     max-width: auto;
     max-height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid black;
+}
+
+.author-pic::before, .author-pic::after {
+    position: absolute;
+    bottom: 0;
+    background: #959DA5;
+    border-bottom:1px solid #333;
+    background-clip: padding-box;
+    overflow:hidden;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    content: "";
+}
+
+.author-pic::before {
+    left: -11px;
+    border-bottom-right-radius:8px;
+    border-right:1px solid black;
+}
+
+.author-pic::after {
+    right: -11px;
+    border-bottom-left-radius:8px;
+    border-left:1px solid black;
 }
 
 .author-pic img {
@@ -51,8 +82,6 @@ h1.headline {
     height: 100%;
     box-sizing: border-box;
     object-fit: cover;
-
-    display: flex;
     
     border-top-left-radius: 0.2em;
     border-bottom-left-radius: 0.2em;
@@ -63,10 +92,13 @@ h1.headline {
 .byline {
     color: #afafaf;
     padding: 0 1em;
+    border: 1px solid black;
+
 
     /* transition: background 240ms ease-out; */
 
 }
+
 
 .byline-author p {
     font-weight: 600;
@@ -93,23 +125,21 @@ h1.headline {
     /* font-size: 1em; */
     color: #999999;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-
     max-width: 800px;
 
-    box-shadow: var(--shadow);
+    border-radius: 0.3em;
+    /* box-shadow: var(--shadow); */
     transition: 0.2s ease-in;
     
-
     /* border: 1px solid #afafaf50; */
 
-    border-radius: 0.3em;
-
+    text-align: center;
     
 }
 
