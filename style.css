@@ -42,23 +42,30 @@ h1.headline {
 }
 
 .author-pic {
+    position: relative;
+    background-clip: padding-box;
+
     max-width: auto;
     max-height: auto;
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     border: 1px solid black;
     border-bottom: none;
-    height: 100%;
     bottom: -1px;
+
+    max-width: 4em;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    position: relative;
 }
 
 .author-pic:before, .author-pic:after {
     position: absolute;
     bottom: -1px;
-    background: white;
+    background: cyan;
     /* border-bottom:1px solid #333; */
     background-clip: padding-box;
     overflow:hidden;
@@ -78,22 +85,26 @@ h1.headline {
     bottom: -1px;
 }
 
-.author-pic img {
-    width: 100px;
-    height: 100%;
+.author-pic a {
+
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-bottom: none;
+    bottom: -1px;
+
+    width: 4em;
     box-sizing: border-box;
     object-fit: cover;
     position: relative;
     
     border-top-left-radius: 0.2em;
     border-bottom-left-radius: 0.2em;
-
-    /* border-radius: 3em; */
 }
 
-.author-pic img:before, .author-pic img:after {
+.author-pic a:before, .author-pic a:after {
     position: absolute;
-    background: white;
+    background: magenta;
     border-bottom:1px solid #333;
     background-clip: padding-box;
     overflow:hidden;
@@ -103,14 +114,14 @@ h1.headline {
     content: "";
 }
 
-.author-pic img::before {
+.author-pic a::before {
     left: -11px;
     bottom: -9px;
     border-bottom-right-radius:8px;
     border-right: 1px solid black;
 }
 
-.author-pic img::after {
+.author-pic a::after {
     right: -11px;
     bottom: -9px;
     border-bottom-left-radius:8px;
@@ -129,7 +140,7 @@ h1.headline {
 
 .byline-author {
     padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.1em;
     position: relative;
     border: 1px solid black;
     border-bottom: 1px solid white;
@@ -155,12 +166,12 @@ h1.headline {
 
 .byline-author:before {
     left: -10px;
-    bottom: -1px;
+    bottom: -2px;
 }
 
 .byline-author:after {
     right: -10px;
-    bottom: -1px;
+    bottom: -2px;
 }
 
 .byline-author a {
@@ -173,8 +184,8 @@ h1.headline {
     width: 100%;
     position: relative;
     background-clip: padding-box;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
 }
 
 .byline-author a:before, .byline-author a:after {
@@ -191,14 +202,14 @@ h1.headline {
 
 .byline-author a:before {
     left: -11px;
-    bottom: -9px;
+    bottom: -3px;
     border-bottom-right-radius:8px;
     border-right: 1px solid black;
 }
 
 .byline-author a:after {
     right: -11px;
-    bottom: -9px;
+    bottom: -3px;
     border-bottom-left-radius:8px;
     border-left: 1px solid black;
 }
@@ -207,10 +218,12 @@ h1.headline {
     max-width: 600px;
     line-height: 120%;
     border: 1px solid black;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     padding-bottom: 0.5em;
     display: block;
     border-radius: 0.3em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
 }
 
 .byline-link {
@@ -221,6 +234,7 @@ h1.headline {
     border-radius: 0em;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
+    padding-top: 0.2em !important;
 }
 
 .byline-link:before, .byline-link:after {
@@ -257,7 +271,7 @@ h1.headline {
 
 .byline-link a:before, .byline-link a:after {
     position: absolute;
-    top: -9px;
+    top: -0.28em;
     background: white;
     border-top:1px solid #333;
     background-clip: padding-box;
@@ -269,13 +283,13 @@ h1.headline {
 }
 
 .byline-link a:before {
-    left: -11px;
+    left: -0.9em;
     border-top-right-radius:8px;
     border-right: 1px solid black;
 }
 
 .byline-link a:after {
-    right: -11px;
+    right: -0.9em;
     border-top-left-radius:8px;
     border-left: 1px solid black;
 }
