@@ -52,13 +52,14 @@ h1.headline {
     border: 1px solid black;
     border-bottom: none;
     height: 100%;
+    bottom: -1px;
 }
 
 .author-pic:before, .author-pic:after {
     position: absolute;
     bottom: -1px;
     background: white;
-    border-bottom:1px solid #333;
+    /* border-bottom:1px solid #333; */
     background-clip: padding-box;
     overflow:hidden;
     width: 10px;
@@ -68,15 +69,13 @@ h1.headline {
 }
 
 .author-pic:before {
-    left: -11px;
-    border-bottom-right-radius:8px;
-    border-right:1px solid black;
+    left: -10px;
+    bottom: -1px;
 }
 
 .author-pic:after {
-    right: -11px;
-    border-bottom-left-radius:8px;
-    border-left:1px solid black;
+    right: -10px;
+    bottom: -1px;
 }
 
 .author-pic img {
@@ -94,8 +93,7 @@ h1.headline {
 
 .author-pic img:before, .author-pic img:after {
     position: absolute;
-    bottom: -1px;
-    background: black;
+    background: white;
     border-bottom:1px solid #333;
     background-clip: padding-box;
     overflow:hidden;
@@ -107,10 +105,16 @@ h1.headline {
 
 .author-pic img::before {
     left: -11px;
+    bottom: -9px;
+    border-bottom-right-radius:8px;
+    border-right: 1px solid black;
 }
 
 .author-pic img::after {
     right: -11px;
+    bottom: -9px;
+    border-bottom-left-radius:8px;
+    border-left: 1px solid black;
 }
 
 .byline {
@@ -131,7 +135,8 @@ h1.headline {
     border-bottom: 1px solid white;
     display: inline-block;
     bottom: -1px;
-    z-index: 0;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
     
 }
 
@@ -167,11 +172,13 @@ h1.headline {
     text-decoration: none;
     width: 100%;
     position: relative;
+    background-clip: padding-box;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .byline-author a:before, .byline-author a:after {
     position: absolute;
-    bottom: -1px;
     background: white;
     border-bottom:1px solid #333;
     background-clip: padding-box;
@@ -196,18 +203,83 @@ h1.headline {
     border-left: 1px solid black;
 }
 
-.byline-desc {
+.byline-desc, .byline-link {
     max-width: 600px;
     line-height: 120%;
     border: 1px solid black;
-    display: inline-block;
-    z-index: 2;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: block;
+    border-radius: 0.3em;
 }
 
 .byline-link {
-    padding-top: 0.5em;
-    padding-bottom: 0.8em;
+    top: -1px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid white;
+    border-radius: 0em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
 }
+
+.byline-link:before, .byline-link:after {
+    position: absolute;
+    top: -1px;
+    background: white;
+    /* border-bottom:1px solid #333; */
+    background-clip: padding-box;
+    overflow:hidden;
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    content: "";
+}
+
+.byline-link:before {
+    left: -10px;
+    bottom: -1px;
+}
+
+.byline-link:after {
+    right: -10px;
+    bottom: -1px;
+}
+
+.byline-link a {
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    background-clip: padding-box;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.byline-link a:before, .byline-link a:after {
+    position: absolute;
+    top: -9px;
+    background: white;
+    border-top:1px solid #333;
+    background-clip: padding-box;
+    overflow:hidden;
+    width: 10px;
+    height: 10px;
+    z-index: 3;
+    content: "";
+}
+
+.byline-link a:before {
+    left: -11px;
+    border-top-right-radius:8px;
+    border-right: 1px solid black;
+}
+
+.byline-link a:after {
+    right: -11px;
+    border-top-left-radius:8px;
+    border-left: 1px solid black;
+}
+
 
 .byline-container {
     /* font-size: 1em; */
