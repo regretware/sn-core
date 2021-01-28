@@ -44,10 +44,11 @@ h1.headline {
 .author-pic {
     max-width: auto;
     max-height: auto;
+    border-right: 1px solid lightgray;
 }
 
 .author-pic img {
-    width: 100px;
+    width: 120px;
     height: 100%;
     box-sizing: border-box;
     object-fit: cover;
@@ -100,7 +101,7 @@ h1.headline {
     margin-right: auto;
     align-content: center;
 
-    max-width: 800px;
+    max-width: 600px;
 
     box-shadow: var(--shadow);
     transition: 0.2s ease-in;
@@ -109,7 +110,6 @@ h1.headline {
     /* border: 1px solid #afafaf50; */
 
     border-radius: 0.3em;
-
     
 }
 
