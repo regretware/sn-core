@@ -272,19 +272,18 @@ figure {
     transition: background 0.1s ease-out;
 }
 
-.logo-link:hover {
-    background-color: inherit;
-    transition: none;
-    color: inherit;
-    animation: pulse-logo 1s infinite;
-}
-
 .logo svg {
     display: block;
     margin: auto;
     width: 4em;
     height: 12em;
-    /* padding-top: 10vh; */
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.logo svg:hover {
+    transition: none;
+    animation: pulse-logo 1s infinite;
 }
 
 .middle-links a, .links a {
@@ -337,7 +336,7 @@ figure {
     height: 100%;
 }
 
-.footer-text {
+.footer-text  {
     /* display: flex; */
     text-align: center;
     justify-content: center;
@@ -358,11 +357,24 @@ figure {
     margin: auto;
 }
 
+.footer-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer-text:hover {
     /* box-shadow: var(--shadow); */
     background: #eeeeee;
     color: #222222;
     transition: 0.1s ease-out;
+}
+
+#sn-footer {
+    font-style: italic;
+}
+
+#rating:hover {
+    background: none;
 }
 
 #plausable:hover {
