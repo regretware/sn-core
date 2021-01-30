@@ -73,7 +73,7 @@ h1.headline {
     /* border-radius: 3em; */
 }
 
-.byline {
+.author-text {
     color: #afafaf;
     padding: 0 1em;
 
@@ -81,7 +81,7 @@ h1.headline {
 
 }
 
-.byline-author p {
+.byline p {
     font-weight: 600;
     color: black;
     font-style: normal;
@@ -106,11 +106,15 @@ h1.headline {
     text-decoration: none;
     font-style: inherit;
     color: var(--blue);
+    transition: 0.3s ease-out;
+    
     
 }
 
 .byline-link a:hover {
-    opacity: 50%;
+    color: #afafaf;
+    transition: 0.1s ease-out;
+    
 
 }
 
@@ -129,11 +133,10 @@ h1.headline {
 
     box-shadow: var(--shadow);
     transition: 0.3s ease-out;
-    
-
-    /* border: 1px solid #afafaf50; */
 
     border-radius: 0.3em;
+
+    cursor: pointer;
     
 }
 
@@ -141,6 +144,10 @@ h1.headline {
     transition: 0.1s ease-out;
     box-shadow: var(--shadow-lifted);
     transform: translate3d(0px, -1px, 0px);
+}
+
+.byline-container-mobile {
+    display: none;
 }
 
 time {
@@ -250,9 +257,9 @@ figure {
     justify-content: center;
     align-content: center;
     line-height: 200%;
-    padding-top: 5vh;
     /* padding-bottom: 5vh; */
     margin: auto;
+    margin-top: 2em;
     flex-wrap: wrap;
 }
 
@@ -471,7 +478,7 @@ figure {
         color: #afafaf;
     }
 
-    .byline p {
+    .author-text p {
         color: white;
     }
 
@@ -479,7 +486,7 @@ figure {
         box-shadow: var(--shadow-light);
     }
 
-    .byline a:hover {
+    .author-text a:hover {
         color: white;
         transition: color 120ms linear;
     }
@@ -515,6 +522,10 @@ figure {
 
 @media screen and (max-width: 840px) {
 
+    .byline-container-mobile {
+        display: visible;
+    }
+
     .links {
         flex-wrap: wrap;
     }
@@ -525,10 +536,10 @@ figure {
 
     h1.headline{
         font-size: 2em;
-        font-weight: 900;
         hyphens: auto;
         line-height: 120%;
         margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .headline-block img {
@@ -557,10 +568,16 @@ figure {
         -moz-hyphens: auto;
     }
 
+
+
     .byline-container, .byline-container-mobile {
         display: flex;
         /* line-height: 2em; */
         flex-direction: column;
+    }
+
+    .byline-container {
+        display: none;
     }
 
     .byline-container-mobile img{
@@ -572,11 +589,11 @@ figure {
         border-right: none;
     }
 
-    .byline-container-mobile .byline {
+    .byline-container-mobile .author-text {
         margin-block-start: 0.5em;
     }
 
-    .byline {
+    .author-text {
         border-top-left-radius: 0.3em;
         border-top-right-radius: 0.3em;
         border-bottom-left-radius: 0;
@@ -622,7 +639,7 @@ figure {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-top: 0.5em;
+        margin-top: 2em;
         padding-left: 1.0em;
         padding-right: 1.0em;
         flex: auto;
