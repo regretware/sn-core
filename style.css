@@ -61,7 +61,16 @@ h1.headline {
     margin-right: auto;
     margin: 10;
     flex-direction: column;
-    color: #00000025;
+    color: #afafaf80;
+
+    transition: 0.3s ease-out;
+
+    cursor: pointer;
+}
+
+.pre-headline:hover {
+    color: black;
+    transition: 0.1s ease-out;
 }
 
 .author-pic {
@@ -445,8 +454,9 @@ figure {
         color: white;
     }
 
-    .pre-headline {
-        color: #ffffff80;
+    .pre-headline:hover {
+        color: white;
+        transition: 0.1s ease-out;
     }
 
     a, .middle-links a, .links a {
