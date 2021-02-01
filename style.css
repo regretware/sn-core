@@ -176,7 +176,7 @@ time {
 .image-container .caption {
     position: absolute;
     width: 100%;
-    bottom: 5%;
+    bottom: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: small;
@@ -187,13 +187,6 @@ time {
 figure {
     font-weight: normal;
     width: 100%;
-}
-
-#greber {
-    text-shadow: none;
-    color: grey;
-    bottom: 3%;
-
 }
 
 .image-container {
@@ -543,7 +536,7 @@ figure {
     .image-container .caption, .image-container .inline-image .caption {
         position: absolute;
         width: 90%;
-        bottom: 5%;
+        bottom: 3%;
         left: 50%;
         font-size: 0.6rem;
     }
