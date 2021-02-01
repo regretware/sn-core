@@ -26,7 +26,8 @@
 </head>
 <body>
     <div>
-        <a class="logo-link" href="/"">
+        <div class="content">
+        <a class="logo" href="/"">
         <svg width="394" height="30vh" viewBox="0 0 394 292" fill="none" xmlns="http://www.w3.org/2000/svg">
             <style>
                 @media (prefers-color-scheme: dark) {
@@ -71,5 +72,23 @@
         <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
         <a href="https://medium.com/@supernovafuture" target="_blank" style="margin-right: 0px !important" id="twitter">Medium</a>
     </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text" id="rating">18 +</div>
+        <div class="footer-text" id="sn-footer">
+            <a href="/about.html">сверхновая</a>
+        </div>
+        <div class="footer-text" id="plausable">
+            <a href="https://plausible.io/supernova.is" target="_blank">Мы используем отвественную аналитику от Plausible</a>
+        </div>
+        <div class="footer-text">
+            <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+        </div>
+    </div>
+
+    <!-- JS method courtesy of Sergey Surganov and Pranav C Balan -->
+    <script type="text/javascript">
+        Array.prototype.forEach.call(document.querySelectorAll('.text a'), function (link) { link.target = "_blank" })
+    </script>
 </body>
 </html>
