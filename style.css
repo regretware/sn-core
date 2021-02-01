@@ -44,7 +44,7 @@ address {
     display: flex;
 }
 
-h1.headline {
+h1.headline, h2.headline {
     /* padding-top: 4vh; */
     display: flex;
     text-align: center;
@@ -52,6 +52,18 @@ h1.headline {
     font-size: 3em;
     line-height: 110%;
     font-weight: 800;
+}
+
+h1.headline {
+    margin-top: 0;
+}
+
+.pre-headline {
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto 10;
+    flex-direction: column;
+    color: #00000025;
 }
 
 .author-pic {
@@ -332,17 +344,6 @@ figure {
 
 }
 
-.likely-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    max-width: 800px;
-}
-
 .footer {
     /* background-color: #eee; */
     height: 4em;
@@ -463,6 +464,10 @@ figure {
         color: white;
     }
 
+    .pre-headline {
+        color: #ffffff80;
+    }
+
     a, .middle-links a, .links a {
         color: white;
     }
@@ -534,11 +539,15 @@ figure {
         padding-top: 6vh;
     }
 
-    h1.headline{
+    h1.headline, h2.headline{
         font-size: 2em;
         hyphens: auto;
         line-height: 120%;
         margin-top: 1em;
+    }
+
+    h1.headline {
+        margin-top: 0;
         margin-bottom: 1em;
     }
 
