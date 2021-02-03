@@ -571,12 +571,11 @@ figure {
         -moz-hyphens: auto;
     }
 
-
-
     .byline-container {
         display: flex;
         /* line-height: 2em; */
         flex-direction: column;
+        width: 100%;
     }
 
     .byline-container img{
