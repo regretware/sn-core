@@ -56,6 +56,11 @@ h1.headline {
     margin-top: 0;
 }
 
+h3 {
+    text-align: center;
+    font-weight: 800;
+}
+
 .pre-headline {
     margin-left: auto;
     margin-right: auto;
@@ -133,7 +138,6 @@ h1.headline {
 .byline-link a:hover {
     color: #afafaf;
     transition: 0.1s ease-out;
-    
 
 }
 
@@ -148,7 +152,7 @@ h1.headline {
     margin-right: auto;
     align-content: center;
 
-    max-width: 600px;
+    width: 600px;
 
     box-shadow: var(--shadow);
     transition: 0.3s ease-out;
