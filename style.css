@@ -438,6 +438,21 @@ figure {
     }
 }
 
+@keyframes refract {
+    0% {color: #FFE66E;}
+    10% {color: #79ACA4;}
+    20% {color: #5C5BE9;}
+    30% {color: #CCFF00;}
+    40% {color: #FEBDB2;}
+    50% {color: #55db86;}
+    50% {color: #FEFF00;}
+    50% {color: #8d5be9;}
+    60% {color: #F1B242;}
+    80% {color: #FAFFC3;}
+    90% {color: #FF5F7E;}
+    100% {color: #FFE66E;}
+  }
+
 @media screen and (prefers-color-scheme: dark) {
     body {
         background-color: black;
