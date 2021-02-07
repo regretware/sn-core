@@ -292,18 +292,21 @@ figure {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
     display: inline;
-    color: #0178FF;
-    background: #0178FF10;
+    /* color: #0178FF; */
+    /* background: #0178FF10; */
     border-radius: 0.2em;
     text-decoration: none;
     padding-left: 0.2em;
     padding-right: 0.2em;
     transition: background 0.3s ease-out;
+    animation: refract 2.5s infinite;
 }
 
 .text a:hover {
     background: none;
     transition: background 0.1s ease-out;
+    /* animation: refract 2.5s infinite; */
+    animation-play-state: paused;
 }
 
 .logo svg {
@@ -453,6 +456,21 @@ figure {
     100% {color: #FFE66E;}
   }
 
+  @keyframes refract-bg {
+    0% {background: #FFE66E20;}
+    10% {background: #79ACA420;}
+    20% {background: #5C5BE920;}
+    30% {background: #CCFF0020;}
+    40% {background: #FEBDB220;}
+    50% {background: #55db8620;}
+    50% {background: #FEFF0020;}
+    50% {background: #8d5be920;}
+    60% {background: #F1B24220;}
+    80% {background: #FAFFC320;}
+    90% {background: #FF5F7E20;}
+    100% {background: #FFE66E20;}
+  }
+
 @media screen and (prefers-color-scheme: dark) {
     body {
         background-color: black;
@@ -515,7 +533,7 @@ figure {
     }
 
     .text a {
-        background: #0178FF30
+        /* background: #0178FF30 */
 
         /* color: white;
         border: white;
