@@ -176,7 +176,7 @@ h3 {
 
 time {
     box-shadow: var(--shadow);
-    padding: 0 0.5em;
+    padding: 0.5em;
     background: hsla(0,0%,100%,.66);
 
     border-radius: 0.3em;
@@ -187,7 +187,11 @@ time {
     margin-right: auto;
     max-width: 100%;
     align-content: center;
-    line-height: 2em;
+
+    line-height: 1.2em;
+
+    text-align: center;
+
 
 }
 
