@@ -347,9 +347,7 @@ figure {
     /* background-color: #eee; */
     height: 4em;
     display: flex;
-    flex:auto;
-    flex-direction: row;
-    /* align-content: flex-start; */
+    flex-flow: row wrap;
     max-width: 800px;
     margin: auto;
     margin-top: 0.5em;
@@ -357,27 +355,28 @@ figure {
     justify-content: center;
     line-height: 120%;
     height: 100%;
+
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .footer-text  {
-    /* display: flex; */
     text-align: center;
-    justify-content: center;
-    /* margin-right: 2em; */
     margin-top: 0.5em;
     margin-bottom: 1em;
-    /* font-size: 0.8em; */
-    /* font-weight: 600; */
     line-height: 120%;
     color: #afafaf;
-    /* border: 1px solid black; */
-    padding: 0.5em;
+    padding: 0.4em;
     border-radius: 0.3em;
     transition: 0.3s ease-out;
     background: inherit;
     height: 100%;
     /* flex-wrap: wrap; */
     margin: auto;
+
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    max-width: 100%;
 }
 
 .footer-text a {
@@ -629,26 +628,8 @@ figure {
     }
 
     .footer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         margin-top: 2em;
-        padding-left: 1.0em;
-        padding-right: 1.0em;
-        flex: auto;
-        justify-content: center;
     }
-
-    .footer-text {
-        text-align: center;
-        flex: auto;
-        margin: auto;
-        /* margin-top: 0.2em; */
-        max-width: 100%;
-        padding: 0.4em;
-    }
-
-
 }
 
 @media screen and (max-width: 840px) and (prefers-color-scheme: dark) {
