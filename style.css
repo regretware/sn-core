@@ -628,10 +628,6 @@ figure {
         background-color: black;
     }
 
-    .likely-container {
-        display: none;
-    }
-
     .footer {
         display: flex;
         flex-direction: column;

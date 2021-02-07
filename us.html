@@ -24,9 +24,120 @@
 	<link rel="stylesheet" href="/style.css">
 
 	<style>
+
 		#fbmess {
 			font-weight: 600;
 		}
+
+		@media screen and (min-width: 840px) {
+
+			h1.headline, h2.headline{
+				font-size: 2em;
+				hyphens: auto;
+				line-height: 120%;
+				margin-top: 1em;
+			}
+
+			h1.headline {
+				margin-top: 0;
+			}
+
+			.headline-block img {
+				width: 100%;
+			}
+
+			.image-container .caption, .image-container .inline-image .caption {
+				position: absolute;
+				width: 90%;
+				bottom: 3%;
+				left: 50%;
+				font-size: 0.6rem;
+			}
+
+			.author-pic img {
+				border-right: none;
+				border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+				border-radius: 0.3em 0.3em 0 0;
+			}
+
+			.headline-block, .text {
+				padding-left: 1rem;
+				padding-right: 1rem;
+				hyphens: auto;
+				-webkit-hyphens:auto;
+				-moz-hyphens: auto;
+			}
+
+			.byline-container {
+				display: flex;
+				/* line-height: 2em; */
+				flex-flow: column nowrap;
+				width: 100%;
+				justify-content: flex-start;
+			}
+
+			.byline-container img{
+				width: 100%;
+				border-radius: 0.3em 0.3em 0 0;
+			}
+
+			.byline-container-mobile .author-pic {
+				border-right: none;
+			}
+
+			.byline-container-mobile .author-text {
+				margin-block-start: 0.5em;
+			}
+
+			.author-text {
+				border-top-left-radius: 0.3em;
+				border-top-right-radius: 0.3em;
+				border-bottom-left-radius: 0;
+
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: flex-start;
+				height: 100%;
+
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+				
+			}
+
+			.byline-link {
+				margin-top: auto;
+			}
+
+		}
+
+		@media screen and (max-width: 840px) {
+
+			.headline-block {
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+
+			.byline-container {
+				margin-left: 0em !important;
+				margin-right: 0em !important;
+				margin-top: 1em !important;
+				margin-bottom: 1em !important;
+			}
+ 
+		}
+
+		.byline-container {
+			max-width: 400px;
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+
+		.headline-block {
+			max-width: 100%;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
 	</style>
 	
 </head>
