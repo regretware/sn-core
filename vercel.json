@@ -2,6 +2,7 @@
     "cleanUrls": true,
     "trailingSlash": false,
 
+    "source": "/",
     "headers": [
       {
         "key": "Accept-Encoding",
