@@ -300,8 +300,8 @@ figure {
     /* background: #0178FF10; */
     border-radius: 0.2em;
     text-decoration: none;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
+    /* padding-left: 0.2em;
+    padding-right: 0.2em; */
     transition: background 0.3s ease-out;
     animation: refract 2.5s infinite;
 }
