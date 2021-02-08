@@ -303,7 +303,7 @@ figure {
     /* padding-left: 0.2em;
     padding-right: 0.2em; */
     transition: background 0.3s ease-out;
-    animation: refract 2.5s infinite;
+    animation: refract 3s infinite;
 }
 
 .text a:hover {
