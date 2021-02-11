@@ -2,6 +2,7 @@
     --shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.1) 0px 1px 5px;
     --shadow-lifted: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.2) 0px 1px 5px;
     --shadow-light: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px, rgba(255, 255, 255, 0.1) 0px 0px 5px;
+    --shadow-light-hover: rgba(255, 255, 255, 0.3) 0px 0px 0px 1px, rgba(255, 255, 255, 0.1) 0px 0px 5px;
     --blue: #0178FF;
 }
 
@@ -523,8 +524,12 @@ figure {
         color: white;
     }
 
-    .byline-container, .byline-container:hover {
+    .byline-container {
         box-shadow: var(--shadow-light);
+    }
+
+    .byline-container:hover {
+        box-shadow: var(--shadow-light-hover);
     }
 
     .author-text a:hover {
@@ -532,8 +537,12 @@ figure {
         transition: color 120ms linear;
     }
 
-    .text blockquote, .text blockquote:hover {
+    .text blockquote {
         box-shadow: var(--shadow-light);
+    }
+
+    .text blockquote:hover {
+        box-shadow: var(--shadow-light-hover);
     }
 
     .text a {
