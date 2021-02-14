@@ -49,6 +49,11 @@
 
         body {
             height: 100vh;
+
+            /* WebKit 100vh fix courtesy of Matt Smith  */
+
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
         }
 
         .content {
