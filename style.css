@@ -14,14 +14,12 @@ body {
     font-kerning: normal;
     font-weight: 500;
     margin: 0;
-    /* background-color: #fafafa; */
 }
 
 .content {
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     background-color: white;
-    /* box-shadow: var(--shadow); */
 }
 
 .text p, blockquote {
@@ -44,7 +42,6 @@ address {
 }
 
 h1.headline, h2.headline {
-    /* padding-top: 4vh; */
     display: flex;
     text-align: center;
     margin-block-end: 0px;
@@ -94,8 +91,6 @@ h3 {
     
     border-top-left-radius: 0.2em;
     border-bottom-left-radius: 0.2em;
-
-    /* border-radius: 3em; */
 }
 
 .author-text {
@@ -149,7 +144,6 @@ h3 {
 }
 
 .byline-container {
-    /* font-size: 1em; */
     color: #999999;
     display: flex;
     margin-top: 2em;
@@ -240,7 +234,6 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-top: 10vh; */
     line-height: 150%;
     color: black;
     box-sizing: border-box;
@@ -253,9 +246,7 @@ figure {
 .text blockquote {
     margin-left: 2em;
     padding: 1em;
-    /* border: 1px solid #afafaf80; */
     border-radius: 0.3em;
-    /* background: #f8f8f8; */
 
     box-shadow: var(--shadow);
 
@@ -273,7 +264,6 @@ figure {
     justify-content: center;
     align-content: center;
     line-height: 200%;
-    /* padding-bottom: 5vh; */
     margin: auto;
     margin-top: 2em;
     flex-wrap: wrap;
@@ -297,12 +287,8 @@ figure {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
     display: inline;
-    /* color: #0178FF; */
-    /* background: #0178FF10; */
     border-radius: 0.2em;
     text-decoration: none;
-    /* padding-left: 0.2em;
-    padding-right: 0.2em; */
     transition: background 0.3s ease-out;
     animation: refract 3s infinite;
 }
@@ -310,7 +296,6 @@ figure {
 .text a:hover {
     background: none;
     transition: background 0.1s ease-out;
-    /* animation: refract 2.5s infinite; */
     animation-play-state: paused;
 }
 
@@ -337,7 +322,6 @@ figure {
     text-decoration: none;
     color: black;
 
-    /* border: 1px solid black; */
     border-radius: 4px;
 
     padding: 0px 8px;
@@ -352,7 +336,6 @@ figure {
 }
 
 .footer {
-    /* background-color: #eee; */
     height: 4em;
     display: flex;
     flex-flow: row wrap;
@@ -379,7 +362,6 @@ figure {
     transition: 0.3s ease-out;
     background: inherit;
     height: 100%;
-    /* flex-wrap: wrap; */
     margin: auto;
 
     margin-left: 0.2em;
@@ -393,7 +375,6 @@ figure {
 }
 
 .footer-text:hover {
-    /* box-shadow: var(--shadow); */
     background: #eeeeee;
     color: #222222;
     transition: 0.1s ease-out;
@@ -545,20 +526,6 @@ figure {
         box-shadow: var(--shadow-light-hover);
     }
 
-    .text a {
-        /* background: #0178FF30 */
-
-        /* color: white;
-        border: white;
-        border: 1px dotted white; */
-    }
-
-    .text a:hover {
-        /* color: white;
-        border: white;
-        border: 1px solid white; */
-    }
-
     .image-container img, .inline-image img {
     
         box-shadow: var(--shadow-light);
@@ -652,7 +619,6 @@ figure {
         margin-left: 0;
         margin-right: 0;
         padding: 1em;
-        /* border: 1px solid #afafaf80; */
         border-radius: 0.3em;
         
     }
