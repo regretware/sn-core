@@ -537,12 +537,8 @@ figure {
         transition: color 120ms linear;
     }
 
-    .text blockquote {
+    .text blockquote, .text blockquote:hover {
         box-shadow: var(--shadow-light);
-    }
-
-    .text blockquote:hover {
-        box-shadow: var(--shadow-light-hover);
     }
 
     .text a {

@@ -23,7 +23,7 @@
     <meta name="twitter:image" content="/img/sn-og.jpg">
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
+      
     <!-- PLAUSABLE -->
 
     <script async defer data-domain="supernova.is" src="https://plausible.io/js/plausible.js"></script>
@@ -43,81 +43,57 @@
 
     <link rel="stylesheet" href="/style.css">
 
-	<style>
+    <style>
+        
+        /* body {
+            background-color: black;
+        } */
 
-		@media screen and (min-width: 840px) {
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 8em;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+            text-align: center;
+            animation: pulse-logo 3s infinite;
+        }
 
-			.author-pic img {
-				border-right: none;
-				border-bottom: 1px solid rgba(10, 10, 10, 0.2);
-				border-radius: 0.3em 0.3em 0 0;
-                max-height: 240px;
-			}
-
-			.byline-container {
-				display: flex;
-				flex-flow: column nowrap;
-				width: 100%;
-				justify-content: flex-start;
-				margin-top: 1em;
-				margin-bottom: 1em;
-			}
-
-			.byline-container img{
-				width: 100%;
-				border-radius: 0.3em 0.3em 0 0;
-			}
-
-			.author-text {
-
-				padding-top: 0.5em;
-				padding-bottom: 0.5em;
-				
-			}
-
-			.byline-container {
-				max-width: 400px;
-				margin-left: 1em;
-				margin-right: 1em;
-			}
-
-            .headline-block {
-                margin-top: 3em;
-                margin-bottom: 3em;
-            }
-
-		}
-
-        @media screen and (min-width: 840px) and (prefers-color-scheme: dark) {
-
-            .author-pic img {
-                border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+        @media screen and (min-width: 481px) {
+            p {
+                margin-bottom: 20em;
             }
         }
 
-		@media screen and (max-width: 840px) {
+        @media screen and (max-width: 481px) {
+            p {
+                font-size: initial;
+                margin-bottom: 6em;
+            }
+        }
 
-			.headline-block {
-				flex-flow: column wrap;
-			}
+        @keyframes pulse-logo {
+            0% {
+                opacity: 100%;
+            }
 
-			.byline-container {
-				margin-top: 1em !important;
-				margin-bottom: 1em !important;
-			}
- 
-		}
+            70% {
+                opacity: 0%;
+            }
 
-		.headline-block {
-			max-width: 100%;
-			flex-flow: row wrap;
-		}
+            100% {
+                opacity: 100%;
+            }
+        }
 
-	</style>
-	
+    </style>
+
 </head>
 <body>
-	<div class="content">
+    <div class="content">
         <div class="logo">
             <a class="logo-link" href="/"">
             <svg width="394" height="30vh" viewBox="0 0 394 292" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,50 +115,11 @@
             </svg>
             </a>
         </div>
-        <div class="middle-links">
-            <a href="/about.html">Манифест</a>
-            <a href="/us.html" style="margin-right: 0px !important">О нас</a>
-        </div>
+        <article>
 
-        <p class="text">Сверхновая — это медиа о будущем, интернете и свободе. Это — не только наши главные темы, это наши векторы. Нам кажется, что именно на пересечении этих трех понятий и находится то, о чем нам очень важно говорить. </p>
-
-        <div class="headline-block">
-            <div class="byline-container" onclick="location.href='/future/bezuglov.html';">
-                <div class="author-pic">
-                    <img src="/img/bezuglov/suits.jpg" alt="">
-                </div>
-                <div class="author-text">
-                    <address class="byline"><p rel="author" href="/404.html">Давай завтра? Как придумывать своё будущее и не застревать в утопии</p></address>
-                    <div class="byline-desc">Будущее начинается с чашки, которую вы ставите в раковину, рассчитывая помыть её утром.</div>
-                    <div class="byline-link"> <a href="">Дима Безуглов</a></div>
-                </div>
-            </div>
-
-            <div class="byline-container" onclick="location.href='/future/muravyov.html';">
-                <div class="author-pic">
-                    <img src="/img/muravyov/computer.jpg" alt="">
-                </div>
-                <div class="author-text">
-                    <address class="byline"><p rel="author" href="/404.html">Очаруй меня, алгоритм: как соорудить будущее с технологией своими руками</p></address>
-                    <div class="byline-desc">Рассуждать о будущем технологий одновременно и легко, и невероятно сложно.</div>
-                    <div class="byline-link"> <a href="">Дима Муравьёв</a></div>
-                </div>
-            </div>
-
-            <div class="byline-container" onclick="location.href='/future/vesnin.html';">
-                <div class="author-pic">
-                    <img src="/img/vesnin/eclipse.jpg" alt="">
-                </div>
-                <div class="author-text">
-                    <address class="byline"><p rel="author" href="/404.html">Как найти новое будущее? Гороскоп на 2021 год</p></address>
-                    <div class="byline-desc">С технической стороны, поиск нового будущего обречён: сейчас выходят какие-то консоли и телефоны, но в локдауне это всё как будто потеряло смысл.</div>
-                    <div class="byline-link"> <a href="">Дима Веснин</a></div>
-                </div>
-            </div>
-        </div>
-
-        
-
+            <article class="text">
+            <p>Готовимся к стыковке …</p>
+        </article>
         <div class="links">
             <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
             <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
@@ -193,23 +130,16 @@
         </div>
         </div>
         <div class="footer">
-            <div class="footer-text" id="rating">18 +</div>
-            <div class="footer-text" id="sn-footer">
-                <a href="/about.html">сверхновая</a>
-            </div>
-            <div class="footer-text" id="plausable">
-                <a href="https://plausible.io/supernova.is" target="_blank">Мы используем отвественную аналитику от Plausible</a>
-            </div>
             <div class="footer-text">
                 <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
             </div>
         </div>
+    
+        <!-- JS onlick method courtesy of Chris Kraack -->
+        <!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
+        <script type="text/javascript">
+            Array.prototype.forEach.call(document.querySelectorAll('.text a'), function (link) { link.target = "_blank" })
+        </script>
     </div>
-
-	<!-- JS onlick method courtesy of Chris Kraack -->
-	<!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
-	<script type="text/javascript">
-		Array.prototype.forEach.call(document.querySelectorAll('.text a'), function (link) { link.target = "_blank" })
-	</script>
 </body>
 </html>

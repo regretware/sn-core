@@ -1,52 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lost in space</title>
+    <!-- OG -->
 
-    <style>
-        
-        body {
-            background-color: black;
-        }
+    <!-- HTML Meta Tags -->
+    <title>Cверхновая. Исследовательское медиа о будущем, интернете и свободе</title>
+    <meta name="description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
 
-        p {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 40vh;
-            line-height: 150%;
-            color: white;
-            box-sizing: border-box;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 800px;
-            font-size: 1.5em;
-            font-weight: 600;
-            text-align: center;
-            animation: pulse-logo 2.3s infinite;
-        }
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="supernova.is">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cверхновая. Исследовательское медиа о будущем, интернете и свободе">
+    <meta property="og:description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
+    <meta property="og:image" content="/img/sn-og.jpg">
 
-        @keyframes pulse-logo {
-            0% {
-                opacity: 100%;
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="supernova.is">
+    <meta property="twitter:url" content="supernova.is">
+    <meta name="twitter:title" content="Cверхновая. Исследовательское медиа о будущем, интернете и свободе">
+    <meta name="twitter:description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
+    <meta name="twitter:image" content="/img/sn-og.jpg">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- PLAUSABLE -->
+
+    <script async defer data-domain="supernova.is" src="https://plausible.io/js/plausible.js"></script>
+
+    <!-- FAVICONS -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=YA376Q73k9">
+    <link rel="manifest" href="/fav/site.webmanifest?v=YA376Q73k9">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=YA376Q73k9" color="#000000">
+    <link rel="shortcut icon" href="/fav/favicon.ico?v=YA376Q73k9">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="/style.css">
+
+	<style>
+
+		@media screen and (min-width: 840px) {
+
+			.author-pic img {
+				border-right: none;
+				border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+				border-radius: 0.3em 0.3em 0 0;
+                max-height: 240px;
+			}
+
+			.byline-container {
+				display: flex;
+				flex-flow: column nowrap;
+				width: 100%;
+				justify-content: flex-start;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+
+			.byline-container img{
+				width: 100%;
+				border-radius: 0.3em 0.3em 0 0;
+			}
+
+			.author-text {
+
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+				
+			}
+
+			.byline-container {
+				max-width: 400px;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+            .headline-block {
+                margin-top: 3em;
+                margin-bottom: 3em;
             }
 
-            70% {
-                opacity: 0%;
-            }
+		}
 
-            100% {
-                opacity: 100%;
+        @media screen and (min-width: 840px) and (prefers-color-scheme: dark) {
+
+            .author-pic img {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
             }
         }
 
-    </style>
+		@media screen and (max-width: 840px) {
 
+			.headline-block {
+				flex-flow: column wrap;
+			}
+
+			.byline-container {
+				margin-top: 1em !important;
+				margin-bottom: 1em !important;
+			}
+ 
+		}
+
+		.headline-block {
+			max-width: 100%;
+			flex-flow: row wrap;
+		}
+
+	</style>
+	
 </head>
 <body>
-    <p>404</p>
+	<div class="content">
+        <div class="logo">
+            <a class="logo-link" href="/"">
+            <svg width="394" height="30vh" viewBox="0 0 394 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    @media (prefers-color-scheme: dark) {
+                    circle, rect {
+                        fill: white;
+                    }
+                        rect, line {
+                        stroke: white;
+                        }
+                    }
+                </style>
+                <circle cx="197.005" cy="253.667" r="38.1241" fill="black"/>
+                <rect x="0.480469" y="245.831" width="393.039" height="15.6721" rx="7.83604" fill="black"/>
+                <line x1="269.236" y1="172.369" x2="367.61" y2="65.0791" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+                <line x1="11.9761" y1="-11.9761" x2="157.539" y2="-11.9761" transform="matrix(-0.675817 -0.737069 -0.737069 0.675817 128.565 189.29)" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+                <line x1="198.509" y1="158.144" x2="198.508" y2="12.5809" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+            </svg>
+            </a>
+        </div>
+        <div class="middle-links">
+            <a href="/about.html">Манифест</a>
+            <a href="/us.html" style="margin-right: 0px !important">О нас</a>
+        </div>
+
+        <p class="text">Сверхновая — это медиа о будущем, интернете и свободе. Это — не только наши главные темы, это наши векторы. Нам кажется, что именно на пересечении этих трех понятий и находится то, о чем нам очень важно говорить. </p>
+
+        <div class="headline-block">
+            <div class="byline-container" onclick="location.href='/future/bezuglov.html';">
+                <div class="author-pic">
+                    <img src="/img/bezuglov/suits.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Давай завтра? Как придумывать своё будущее и не застревать в утопии</p></address>
+                    <div class="byline-desc">Будущее начинается с чашки, которую вы ставите в раковину, рассчитывая помыть её утром.</div>
+                    <div class="byline-link"> <a href="">Дима Безуглов</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/future/muravyov.html';">
+                <div class="author-pic">
+                    <img src="/img/muravyov/computer.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Очаруй меня, алгоритм: как соорудить будущее с технологией своими руками</p></address>
+                    <div class="byline-desc">Рассуждать о будущем технологий одновременно и легко, и невероятно сложно.</div>
+                    <div class="byline-link"> <a href="">Дима Муравьёв</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/future/vesnin.html';">
+                <div class="author-pic">
+                    <img src="/img/vesnin/eclipse.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Как найти новое будущее? Гороскоп на 2021 год</p></address>
+                    <div class="byline-desc">С технической стороны, поиск нового будущего обречён: сейчас выходят какие-то консоли и телефоны, но в локдауне это всё как будто потеряло смысл.</div>
+                    <div class="byline-link"> <a href="">Дима Веснин</a></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="links">
+            <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
+            <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
+            <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
+            <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
+            <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
+            <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text" id="rating">18 +</div>
+            <div class="footer-text" id="sn-footer">
+                <a href="/about.html">сверхновая</a>
+            </div>
+            <div class="footer-text" id="plausable">
+                <a href="https://plausible.io/supernova.is" target="_blank">Мы используем отвественную аналитику от Plausible</a>
+            </div>
+            <div class="footer-text">
+                <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+
+	<!-- JS onlick method courtesy of Chris Kraack -->
+	<!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
+	<script type="text/javascript">
+		Array.prototype.forEach.call(document.querySelectorAll('.text a'), function (link) { link.target = "_blank" })
+	</script>
 </body>
 </html>
