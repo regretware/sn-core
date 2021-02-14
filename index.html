@@ -52,11 +52,15 @@
         }
 
         .content {
-            height: 96vh;
+            height: 99vh;
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
             align-items: stretch;
+        }
+
+        article {
+            flex: 1
         }
 
         .footer {
@@ -70,26 +74,21 @@
             max-width: 800px;
             text-align: center;
             animation: pulse-logo 2.3s infinite;
+
         }
 
-        @media screen and (min-width: 481px) {
+        @media screen and (min-width: 481px)  {
             
             p {
-                margin-bottom: 0em;
-            }
-
-            .links {
-                margin-top: 12em;
+                margin-top: 2em;
+                margin-bottom: 5em;
             }
         }
 
         @media screen and (max-width: 481px) {
             p {
                 font-size: initial;
-            }
-
-            .content {
-                height: 90vh;
+                padding-bottom: 0em;
             }
         }
 
@@ -135,7 +134,7 @@
         </div>
 
         <article class="text">
-        <p>Готовимся к стыковке …</p>
+        <p>Подготовка к стыковке …</p>
         </article>
 
         <div class="links-footer">
