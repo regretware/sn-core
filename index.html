@@ -209,8 +209,11 @@
 
 	<!-- JS onlick method courtesy of Chris Kraack -->
 	<!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
-	<script type="text/javascript">
-		Array.prototype.forEach.call(document.querySelectorAll('.text a'), function (link) { link.target = "_blank" })
-	</script>
+    <script type="text/javascript">
+        Array.prototype.forEach.call(document.querySelectorAll('.text a, .byline-link a'), function (link) { link.target = "_blank" });
+
+        console.log("Не читайте этот код, сохраните себе нервы (╯°□°）╯︵ ┻━┻");
+
+    </script>
 </body>
 </html>
