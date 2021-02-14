@@ -46,34 +46,46 @@
     <link rel="stylesheet" href="/style.css">
 
     <style>
-        
-        /* body {
-            background-color: black;
-        } */
+
+        body {
+            height: 100vh;
+        }
+
+        .content {
+            height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .footer {
+            height: initial;
+        }
 
         p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 8em;
             box-sizing: border-box;
             margin-left: auto;
             margin-right: auto;
             max-width: 800px;
             text-align: center;
-            animation: pulse-logo 3s infinite;
+            animation: pulse-logo 2.3s infinite;
         }
 
         @media screen and (min-width: 481px) {
+            
             p {
-                margin-bottom: 20em;
+                margin-bottom: 0em;
+            }
+
+            .links {
+                margin-top: 12em;
             }
         }
 
         @media screen and (max-width: 481px) {
             p {
                 font-size: initial;
-                margin-bottom: 6em;
             }
         }
 
@@ -117,24 +129,28 @@
             </svg>
             </a>
         </div>
-        <article>
 
-            <article class="text">
-            <p>Готовимся к стыковке …</p>
+        <article class="text">
+        <p>Готовимся к стыковке …</p>
         </article>
-        <div class="links">
-            <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
-            <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
-            <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
-            <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
-            <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
-            <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
-        </div>
-        </div>
-        <div class="footer">
-            <div class="footer-text">
-                <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+
+        <div class="links-footer">
+
+            <div class="links">
+                <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
+                <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
+                <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
+                <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
+                <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
+                <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
             </div>
+
+            <div class="footer">
+                <div class="footer-text">
+                    <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+                </div>
+            </div>
+
         </div>
     
         <!-- JS onlick method courtesy of Chris Kraack -->
