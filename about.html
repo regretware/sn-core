@@ -72,6 +72,11 @@
             animation: marquee 40s linear infinite;
         }
 
+        .marquee h1:hover {
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
         @keyframes marquee {
             0% {transform: translate(6%,0);}
             100% {transform: translate(-100%,0);}
