@@ -2,6 +2,7 @@
     --shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.1) 0px 1px 5px;
     --shadow-lifted: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, rgba(10, 10, 10, 0.2) 0px 1px 5px;
     --shadow-light: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px, rgba(255, 255, 255, 0.1) 0px 0px 5px;
+    --shadow-light-hover: rgba(255, 255, 255, 0.3) 0px 0px 0px 1px, rgba(255, 255, 255, 0.1) 0px 0px 5px;
     --blue: #0178FF;
 }
 
@@ -13,18 +14,17 @@ body {
     font-kerning: normal;
     font-weight: 500;
     margin: 0;
-    /* background-color: #fafafa; */
 }
 
 .content {
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     background-color: white;
-    /* box-shadow: var(--shadow); */
 }
 
 .text p, blockquote {
-    margin-block-start: 0px;
+    -webkit-margin-before: 0px;
+            margin-block-start: 0px;
 }
 
 .headline-block {
@@ -43,10 +43,10 @@ address {
 }
 
 h1.headline, h2.headline {
-    /* padding-top: 4vh; */
     display: flex;
     text-align: center;
-    margin-block-end: 0px;
+    -webkit-margin-after: 0px;
+            margin-block-end: 0px;
     font-size: 3em;
     line-height: 110%;
     font-weight: 800;
@@ -86,15 +86,14 @@ h3 {
 .author-pic img {
     width: 120px;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-right: 1px solid rgba(10, 10, 10, 0.2);
 
     display: flex;
     
     border-top-left-radius: 0.2em;
     border-bottom-left-radius: 0.2em;
-
-    /* border-radius: 3em; */
 }
 
 .author-text {
@@ -113,8 +112,10 @@ h3 {
     color: black;
     font-style: normal;
     font-size: 1.2em;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
+    -webkit-margin-before: 0.5em;
+            margin-block-start: 0.5em;
+    -webkit-margin-after: 0.5em;
+            margin-block-end: 0.5em;
     line-height: 120%;
 
 }
@@ -148,7 +149,6 @@ h3 {
 }
 
 .byline-container {
-    /* font-size: 1em; */
     color: #999999;
     display: flex;
     margin-top: 2em;
@@ -223,14 +223,17 @@ figure {
 }
 
 .inline-image {
-    margin-block-start: 1rem;
-    margin-block-end: 2rem;
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
 }
 
 .image-container img, .inline-image img {
     width: 100%;
     border-radius: 0.3em;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
     box-shadow: var(--shadow);
 }
@@ -239,7 +242,6 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-top: 10vh; */
     line-height: 150%;
     color: black;
     box-sizing: border-box;
@@ -252,9 +254,7 @@ figure {
 .text blockquote {
     margin-left: 2em;
     padding: 1em;
-    /* border: 1px solid #afafaf80; */
     border-radius: 0.3em;
-    /* background: #f8f8f8; */
 
     box-shadow: var(--shadow);
 
@@ -272,7 +272,6 @@ figure {
     justify-content: center;
     align-content: center;
     line-height: 200%;
-    /* padding-bottom: 5vh; */
     margin: auto;
     margin-top: 2em;
     flex-wrap: wrap;
@@ -296,21 +295,18 @@ figure {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
     display: inline;
-    /* color: #0178FF; */
-    /* background: #0178FF10; */
     border-radius: 0.2em;
     text-decoration: none;
-    /* padding-left: 0.2em;
-    padding-right: 0.2em; */
     transition: background 0.3s ease-out;
-    animation: refract 3s infinite;
+    -webkit-animation: refract 3s infinite;
+            animation: refract 3s infinite;
 }
 
 .text a:hover {
     background: none;
     transition: background 0.1s ease-out;
-    /* animation: refract 2.5s infinite; */
-    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 .logo svg {
@@ -324,7 +320,8 @@ figure {
 
 .logo svg:hover {
     transition: none;
-    animation: pulse-logo 1s infinite;
+    -webkit-animation: pulse-logo 1s infinite;
+            animation: pulse-logo 1s infinite;
 }
 
 .middle-links a, .links a {
@@ -336,7 +333,6 @@ figure {
     text-decoration: none;
     color: black;
 
-    /* border: 1px solid black; */
     border-radius: 4px;
 
     padding: 0px 8px;
@@ -346,12 +342,12 @@ figure {
     background-color: black;
     transition: background 170ms ease-in-out;
     color: white;
-    animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s infinite;
+            animation: pulse 1s infinite;
 
 }
 
 .footer {
-    /* background-color: #eee; */
     height: 4em;
     display: flex;
     flex-flow: row wrap;
@@ -378,7 +374,6 @@ figure {
     transition: 0.3s ease-out;
     background: inherit;
     height: 100%;
-    /* flex-wrap: wrap; */
     margin: auto;
 
     margin-left: 0.2em;
@@ -392,7 +387,6 @@ figure {
 }
 
 .footer-text:hover {
-    /* box-shadow: var(--shadow); */
     background: #eeeeee;
     color: #222222;
     transition: 0.1s ease-out;
@@ -411,10 +405,30 @@ figure {
     color: rgb(65, 82, 238);
 }
 
+::-moz-selection {
+    color: white;
+    background-color: magenta;
+
+}
+
 ::selection {
     color: white;
     background-color: magenta;
 
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
 }
 
 @keyframes pulse {
@@ -428,6 +442,20 @@ figure {
 
     100% {
         opacity: 0%;
+    }
+}
+
+@-webkit-keyframes pulse-logo {
+    0% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 
@@ -445,6 +473,21 @@ figure {
     }
 }
 
+@-webkit-keyframes refract {
+    0% {color: #FFE66E;}
+    10% {color: #79ACA4;}
+    20% {color: #5C5BE9;}
+    30% {color: #CCFF00;}
+    40% {color: #FEBDB2;}
+    50% {color: #55db86;}
+    50% {color: #FEFF00;}
+    50% {color: #8d5be9;}
+    60% {color: #F1B242;}
+    80% {color: #FAFFC3;}
+    90% {color: #FF5F7E;}
+    100% {color: #FFE66E;}
+  }
+
 @keyframes refract {
     0% {color: #FFE66E;}
     10% {color: #79ACA4;}
@@ -458,6 +501,21 @@ figure {
     80% {color: #FAFFC3;}
     90% {color: #FF5F7E;}
     100% {color: #FFE66E;}
+  }
+
+  @-webkit-keyframes refract-bg {
+    0% {background: #FFE66E20;}
+    10% {background: #79ACA420;}
+    20% {background: #5C5BE920;}
+    30% {background: #CCFF0020;}
+    40% {background: #FEBDB220;}
+    50% {background: #55db8620;}
+    50% {background: #FEFF0020;}
+    50% {background: #8d5be920;}
+    60% {background: #F1B24220;}
+    80% {background: #FAFFC320;}
+    90% {background: #FF5F7E20;}
+    100% {background: #FFE66E20;}
   }
 
   @keyframes refract-bg {
@@ -523,8 +581,12 @@ figure {
         color: white;
     }
 
-    .byline-container, .byline-container:hover {
+    .byline-container {
         box-shadow: var(--shadow-light);
+    }
+
+    .byline-container:hover {
+        box-shadow: var(--shadow-light-hover);
     }
 
     .author-text a:hover {
@@ -532,22 +594,12 @@ figure {
         transition: color 120ms linear;
     }
 
-    .text blockquote, .text blockquote:hover {
+    .text blockquote {
         box-shadow: var(--shadow-light);
     }
 
-    .text a {
-        /* background: #0178FF30 */
-
-        /* color: white;
-        border: white;
-        border: 1px dotted white; */
-    }
-
-    .text a:hover {
-        /* color: white;
-        border: white;
-        border: 1px solid white; */
+    .text blockquote:hover {
+        box-shadow: var(--shadow-light-hover);
     }
 
     .image-container img, .inline-image img {
@@ -573,7 +625,9 @@ figure {
 
     h1.headline, h2.headline{
         font-size: 2em;
-        hyphens: auto;
+        -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+                hyphens: auto;
         line-height: 120%;
         margin-top: 1em;
     }
@@ -603,7 +657,8 @@ figure {
     .headline-block, .text {
         padding-left: 1rem;
         padding-right: 1rem;
-        hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
         -webkit-hyphens:auto;
         -moz-hyphens: auto;
     }
@@ -643,7 +698,6 @@ figure {
         margin-left: 0;
         margin-right: 0;
         padding: 1em;
-        /* border: 1px solid #afafaf80; */
         border-radius: 0.3em;
         
     }
@@ -656,7 +710,8 @@ figure {
     .middle-links a, .links a, .middle-links a:hover, .links a:hover {
         color: black;
         background-color: white;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
     }
 
     .middle-links a:hover, .links a:hover {
