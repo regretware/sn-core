@@ -1,1 +1,1 @@
-# sn-core
+[supernova.is](https://supernova.is)
