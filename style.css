@@ -300,7 +300,8 @@ figure {
     padding-bottom: 1.5rem;
 }
 
-.text a {
+.text a,
+time a {
     padding-top: 0.0em;
     padding-bottom: 0.1em;
     display: inline;
@@ -533,6 +534,57 @@ figure {
         color: #FFE66E;
     }
 }
+
+@keyframes refract-shadow {
+    0% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FFE66E 0px 1px 5px;
+    }
+
+    10% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #79ACA4 0px 1px 5px;
+    }
+
+    20% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #5C5BE9 0px 1px 5px;
+    }
+
+    30% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #CCFF00 0px 1px 5px;
+    }
+
+    40% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FEBDB2 0px 1px 5px;
+    }
+
+    50% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #55db86 0px 1px 5px;
+    }
+
+    50% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FEFF00 0px 1px 5px;
+    }
+
+    50% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #8d5be9 0px 1px 5px;
+    }
+
+    60% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #F1B242 0px 1px 5px;
+    }
+
+    80% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FAFFC3 0px 1px 5px;
+    }
+
+    90% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FF5F7E 0px 1px 5px;
+    }
+
+    100% {
+        box-shadow: rgba(10, 10, 10, 0.1) 0px 0px 0px 1px, #FFE66E 0px 1px 5px;
+    }
+}
+
 
 @keyframes refract {
     0% {
