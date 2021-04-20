@@ -312,7 +312,8 @@ time a {
     animation: refract 3s infinite;
 }
 
-.text a:hover {
+.text a:hover,
+time a:hover {
     background: none;
     transition: background 0.1s ease-out;
     -webkit-animation-play-state: paused;
