@@ -63,6 +63,10 @@ h3 {
     font-weight: 800;
 }
 
+h3.chapter {
+    margin-top: 0;
+}
+
 .pre-headline {
     margin-left: auto;
     margin-right: auto;
@@ -307,17 +311,15 @@ time a {
     display: inline;
     border-radius: 0.2em;
     text-decoration: none;
-    transition: background 0.3s ease-out;
-    -webkit-animation: refract 3s infinite;
-    animation: refract 3s infinite;
+    color: var(--blue);
+    transition: 0.3s ease-out;
 }
 
 .text a:hover,
 time a:hover {
     background: none;
-    transition: background 0.1s ease-out;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+    opacity: 50%;
+    transition: 0.1s ease-out;
 }
 
 span.footnote {
