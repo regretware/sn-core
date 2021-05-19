@@ -201,6 +201,10 @@ time {
 
 }
 
+figure time {
+    color: black;
+}
+
 .image-container .caption {
     position: absolute;
     width: 100%;
@@ -765,6 +769,10 @@ span.footnote {
         background: rgb(0, 0, 0);
         color: white;
         box-shadow: var(--shadow-light);
+    }
+
+    figure time {
+        color: WHITE;
     }
 
     .text,
