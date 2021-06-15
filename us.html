@@ -127,6 +127,16 @@
 			cursor: pointer;
 		}
 
+		#online {
+			color: #91e240;
+			animation: 1s pulse infinite;
+		}
+
+		#logged-off {
+			color: rgb(150, 150, 150);
+			animation: 3s pulse infinite;
+		}
+
 	</style>
 	
 </head>
@@ -164,7 +174,8 @@
 	</div>
 
 	<div class="headline-block">
-		<time onclick="window.open('https://www.facebook.com/agadzhikova','_blank');">Фото: Алена Агаджикова через FB&nbsp;Messenger</time>
+		<!-- <time onclick="window.open('https://www.facebook.com/agadzhikova','_blank');">Фото: Алена Агаджикова через FB&nbsp;Messenger</time> -->
+		<h1 class="byline"><span id="online">•</span> Online</h1>
 	</div>
 
 	<div class="headline-block">
@@ -233,6 +244,14 @@
 				<div class="byline-link"> <a href="">@ne.orlova</a></div>
 			</div>
 		</div>
+
+	</div>
+
+	<div class="headline-block">
+		<h1 class="byline"><span id="logged-off">•</span> Logged off</h1>
+	</div>
+
+	<div class="headline-block">
 
 		<div class="byline-container" onclick="window.open('https://www.instagram.com/yuliaschastlivtseva/','_blank');">
 			<div class="author-pic">
