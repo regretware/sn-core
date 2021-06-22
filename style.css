@@ -864,6 +864,12 @@ span.footnote {
         margin-top: 0;
     }
 
+    h2 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .headline-block img {
         width: 100%;
     }
