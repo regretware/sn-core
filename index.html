@@ -87,6 +87,32 @@
                 margin-bottom: 3em;
             }
 
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B50 0px 0px 0px 1px, #83B17B90 0px 1px 10px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #83B17B50 !important;
+            }
+
+            #fwd-letters:hover {
+                /* border: 2px #83B17B solid; */
+            }
+
+            #fwd-letters .byline p {
+                color: #6a9762;
+            }
+
+            #fwd-letters a {
+                color: #83B17B;
+            }
+
+            #fwd-letters a:hover {
+                opacity: 50%;
+            }
+
 		}
 
         @media screen and (min-width: 840px) and (prefers-color-scheme: dark) {
@@ -94,6 +120,21 @@
             .author-pic img {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
             }
+
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B80 0px 0px 0px 1px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #83B17B80 !important;
+            }
+
+            #fwd-letters .byline p {
+                color: #83B17B;
+            }
+            
         }
 
 		@media screen and (max-width: 840px) {
@@ -106,8 +147,42 @@
 				margin-top: 1em !important;
 				margin-bottom: 1em !important;
 			}
+
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B50 0px 0px 0px 1px, #83B17B 0px 1px 5px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #83B17B50 !important;
+            }
+
+            #fwd-letters:hover {
+                /* border: 2px #83B17B solid; */
+            }
+
+            #fwd-letters .byline p {
+                color: #6a9762;
+            }
+
+            #fwd-letters a {
+                color: #83B17B;
+            }
+
+            #fwd-letters a:hover {
+                opacity: 50%;
+            }
  
 		}
+
+        @media screen and (max-width: 840px) and (prefers-color-scheme: dark) {
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B80 0px 0px 0px 1px;
+                /* border: 2px #83b17b40 solid; */
+            }
+        }
 
 		.headline-block {
 			max-width: 100%;
@@ -148,6 +223,39 @@
         <p class="text">Сверхновая&nbsp;&mdash; это медиа о&nbsp;будущем, интернете и&nbsp;свободе. Это&nbsp;&mdash; не&nbsp;только наши главные темы, это наши векторы. Нам кажется, что именно на&nbsp;пересечении этих трех понятий и&nbsp;находится&nbsp;то, о&nbsp;чем нам очень важно говорить.</p>
 
         <div class="headline-block">
+
+            <!-- <div class="byline-container" onclick="location.href='/editorial/trendwatching.html';">
+                <div class="author-pic">
+                    <img src="/img/trendwatching/1.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Трендвотчинг, форсайт, футуризм и&nbsp;еще три способа думать о&nbsp;будущем</p></address>
+                    <div class="byline-desc">Разбираемся, что стоит за&nbsp;этими терминами и&nbsp;как правильно их&nbsp;применять</div>
+                    <div class="byline-link"> <a href="https://www.youtube.com/c/vetushinskiy">Дарья Яковлева</a></div>
+                </div>
+            </div> -->
+
+            <!-- <div class="byline-container" onclick="location.href='/editorial/trendwatching.html';">
+                <div class="author-pic">
+                    <img src="/img/trendwatching/1.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Трендвотчинг, форсайт, футуризм и&nbsp;еще три способа думать о&nbsp;будущем</p></address>
+                    <div class="byline-desc">Разбираемся, что стоит за&nbsp;этими терминами и&nbsp;как правильно их&nbsp;применять</div>
+                    <div class="byline-link"> <a href="https://www.youtube.com/c/vetushinskiy">Дарья Яковлева</a></div>
+                </div>
+            </div> -->
+
+            <div class="byline-container" id="fwd-letters" onclick="location.href='/fwd-letters.html';">
+                <div class="author-pic">
+                    <img src="/img/letters-about-the-future/13.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">FWD: Письма о&nbsp;будущем. Спецпроект <i>сверхновой</i></p></address>
+                    <div class="byline-desc">Это переписка из&nbsp;8&nbsp;писем о&nbsp;том, как и&nbsp;где производится личное и&nbsp;коллективное завтра</div>
+                    <div class="byline-link"> <a>Полина Колозариди и Андрей Тесля</a></div>
+                </div>
+            </div>
 
             <div class="byline-container" onclick="location.href='/editorial/trendwatching.html';">
                 <div class="author-pic">
