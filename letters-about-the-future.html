@@ -48,6 +48,18 @@
 
     <style>
 
+        ::-moz-selection {
+            color: #83b17b;
+            background-color: #83b17b15;
+
+        }
+
+        ::selection {
+            color: #83b17b;
+            background-color: #83b17b15;
+
+        }
+
         .headline-block {
             margin-bottom: 1em;
         }
@@ -71,19 +83,23 @@
         }
 
         .text {
-            color: #222;
+            color: #2C0D36;
         }
 
         .text a, .byline-link a, .middle-links a, .links a {
-            color: #82DD72;
+            color: #83b17b;
         }
 
         .middle-links a:hover, .links a:hover {
-            background-color: #82DD72;
+            background-color: #83b17b;
+        }
+
+        .footer-text:hover {
+            background-color: #83b17b20;
         }
 
         .byline-link a:hover {
-            color: #82DD7270
+            color: #83b17b70
         }
 
         .image-container img,
@@ -93,7 +109,21 @@
         }
 
         blockquote, .byline-container {
-            background-color: white;
+            box-shadow: none;
+            border: 2px #83b17b40 solid;
+        }
+
+        blockquote:hover, .byline-container:hover {
+            box-shadow: none;
+            border: 2px #83b17b solid;
+        }
+
+        .author-pic img {
+            border-right: 2px #83b17b40 solid;
+        }
+
+        .byline-container:hover ~ img {
+            border-right: 2px #83b17b solid;
         }
 
         @media screen and (max-width: 640px) {
@@ -101,6 +131,85 @@
             .inline-image img {
                 border-radius: 1.4em;
             }
+
+            .middle-links a, .links a {
+                background-color: inherit;
+            }
+
+            .middle-links a:hover, .links a:hover {
+                background-color: #83b17b; 
+            }
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+
+            }
+
+            .content {
+                background-color: black;
+            }
+
+            .text,
+            .headline-block h1.headline {
+                color: white;
+            }
+
+            .pre-headline:hover {
+                color: white;
+                transition: 0.1s ease-out;
+            }
+
+            a,
+            .middle-links a,
+            .links a {
+                color: white;
+            }
+
+            .middle-links a:hover,
+            .links a:hover {
+                background-color: white;
+                transition: background 170ms ease-in-out;
+                color: black;
+
+            }
+
+            .byline-container {
+                color: #afafaf;
+            }
+
+            .author-text p {
+                color: white;
+            }
+
+            .author-text a:hover {
+                color: white;
+                transition: color 120ms linear;
+            }
+
+            .image-container img,
+            .inline-image img {
+
+                box-shadow: var(--shadow-light);
+            }
+
+            .footer-text:hover {
+                background: #222222;
+                color: #eeeeee;
+            }
+
+            html {
+                background-color: #071b10;
+            }
+
+            .content, body {
+                background-color: #071b10;
+            }
+
+            .footer-text:hover {
+            background-color: #c6ffbc10;
+        }
         }
  
 
@@ -146,16 +255,17 @@
             <img src="/img/trendwatching/1.png" alt="">
         </figure> -->
         <!-- <h2 class="headline pre-headline byline" rel="author" onclick="window.open('https://t.me/wiresandswamps','_blank');";">Дарья Яковлева</h2> -->
-        <h1 class="headline">FWD: Письма о&nbsp;будущем. Спецпроект сверхновой</h1>
+        <h1 class="headline" style="color: #83b17b;">FWD: Письма о&nbsp;будущем. Спецпроект сверхновой</h1>
 
         <!-- <time pubdate datetime="2021-06-29">29 июня 2021</time> -->
     </div>
     <article style="padding-top: 1em;" class="text" lang="ru">
 
 
-        <p>
         <em>сверхновая представляет серию писем от исследователя интернета Полины Колозариди к историку мысли Андрею Тесле. В этой колонке Полина объясняет, как возник проект, почему был выбран формат переписки и в каких условиях производится будущее.</em>
-        </p>
+
+        <h2 class="chapter">•</h2>
+
         <p>
         так иногда бывает — люди хотят говорить друг с другом о будущем. это разговоры разных жанров. фантазии, страх, проекты, философские рассуждения, и так далее.
         </p>
@@ -240,18 +350,6 @@
         <p>
         тягучее дело, неизбежное в разговоре о будущем — это ожидание ответа. мы публикуем эти письма с паузой, чтобы между словами оставался зазор, продолжая беспокоить.
         </p>
-
-        <div style="display: flex; margin: auto; width: 100%; max-width: fit-content;">
-            <form action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3NzM1NTIxLCJhZGRyZXNzX2Jvb2tfaWQiOjQ0MDE4NSwibGFuZyI6InJ1In0=" method="post">
-            <label>Email</label>
-            <input type="email" required name="email">
-            <input type="hidden" name="sender" value="from@supernova.is">
-            <button>Subscribe</button>
-            </form>
-        </div>
-
-        
-
 
     </article>
 
