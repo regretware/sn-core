@@ -74,8 +74,16 @@
             color: #222;
         }
 
-        .text a {
-            color: #809709;
+        .text a, .byline-link a, .middle-links a, .links a {
+            color: #82DD72;
+        }
+
+        .middle-links a:hover, .links a:hover {
+            background-color: #82DD72;
+        }
+
+        .byline-link a:hover {
+            color: #82DD7270
         }
 
         .image-container img,
@@ -84,7 +92,7 @@
             border-radius: 2.4em;
         }
 
-        blockquote {
+        blockquote, .byline-container {
             background-color: white;
         }
 
@@ -137,12 +145,12 @@
         <!-- <figure class="image-container">
             <img src="/img/trendwatching/1.png" alt="">
         </figure> -->
-        <!-- <h2 class="headline pre-headline byline" rel="author" onclick="window.open('https://t.me/futures_thinking','_blank');";">Дарья Яковлева</h2> -->
+        <!-- <h2 class="headline pre-headline byline" rel="author" onclick="window.open('https://t.me/wiresandswamps','_blank');";">Дарья Яковлева</h2> -->
         <h1 class="headline">FWD: Письма о&nbsp;будущем. Спецпроект сверхновой</h1>
 
         <!-- <time pubdate datetime="2021-06-29">29 июня 2021</time> -->
     </div>
-    <article class="text" lang="ru">
+    <article style="padding-top: 1em;" class="text" lang="ru">
 
 
         <p>
@@ -233,27 +241,29 @@
         тягучее дело, неизбежное в разговоре о будущем — это ожидание ответа. мы публикуем эти письма с паузой, чтобы между словами оставался зазор, продолжая беспокоить.
         </p>
 
-          <!-- SendPulse Simple Subscription Form -->
-    <form action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3NzM1NTIxLCJhZGRyZXNzX2Jvb2tfaWQiOjQ0MDE4NSwibGFuZyI6InJ1In0=" method="post">
-        <label>Email</label>
-        <input type="email" required name="email">
-        <input type="hidden" name="sender" value="from@supernova.is">
-        <button>Subscribe</button>
-    </form>
-    <!-- SendPulse Simple Subscription Form -->
+        <div style="display: flex; margin: auto; width: 100%; max-width: fit-content;">
+            <form action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo3NzM1NTIxLCJhZGRyZXNzX2Jvb2tfaWQiOjQ0MDE4NSwibGFuZyI6InJ1In0=" method="post">
+            <label>Email</label>
+            <input type="email" required name="email">
+            <input type="hidden" name="sender" value="from@supernova.is">
+            <button>Subscribe</button>
+            </form>
+        </div>
+
+        
 
 
     </article>
 
     <div class="headline-block">
-        <div class="byline-container" onclick="window.open('https://t.me/futures_thinking','_blank');">
+        <div class="byline-container" onclick="window.open('https://t.me/wiresandswamps','_blank');">
             <div class="author-pic">
-                <img src="/img/trendwatching/yakovleva.jpg" alt="">
+                <img src="/img/letters-about-the-future/pk.jpg" alt="">
             </div>
             <div class="author-text">
-                <address class="byline"><p rel="author" href="https://t.me/futures_thinking">Дарья Яковлева</p></address>
-                <div class="byline-desc">Автор блога Futures Thinking</div>
-                <div class="byline-link"> <a href="https://t.me/futures_thinking">@futures_thinking</a></div>
+                <address class="byline"><p rel="author" href="https://t.me/wiresandswamps">Полина Колозариди</p></address>
+                <div class="byline-desc">Исследует интернет и другие сюжеты на границе наук и искусств</div>
+                <div class="byline-link"> <a href="https://t.me/wiresandswamps">@wiresandswamps</a></div>
             </div>
         </div>
     </div>
@@ -288,6 +298,8 @@
         console.log("Не читайте этот код, сохраните себе нервы (╯°□°）╯︵ ┻━┻");
 
     </script>
+
+    <script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef06c1c0087d3eebf08ba50e0f237fa4b48891b502b703b8abf0033e18999250"></script>
 
 </body>
 </html>
